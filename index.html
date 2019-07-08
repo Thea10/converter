@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Weight Converter</title>
+    </head>
+    <body class="flex">
+        <div class="container flex">
+            <h1> Converter</h1>
+            <div class="selections">
+                <div class="weightbox">
+                    <label for="weight"> Weight Conversion</label>
+                    <input type="checkbox" id="weight" style="cursor:pointer ">
+                </div>
+                <div class="heightbox">
+                    <label for="height"> Height Conversion</label>
+                    <input type="checkbox" id="height" style="cursor:pointer " >
+                </div>
+            </div>
+            <div class="output-weight" id="weight_display">
+                <input type="text" id="input_weight" name="input" placeholder="Enter value in pounds" >            
+                <div class="output flex green">
+                <p class="id">Grams</p>
+                <p class="option" id="grams">0</p>
+                    </div>
+                <div class="output flex blue">
+                    <p class="id">Kilograms</p>
+                    <p class="option" id="kilograms">0</p>
+                </div>
+                <div class="output flex yellow">
+                <p class="id">Ounces</p>
+                <p class="option" id="ounces">0</p>
+                </div>
+           </div>
+
+            <div class="output-height" id="height_display">
+                <input type="text" id="input_height" name="input" placeholder="Enter value in Meters">            
+                <div class="output flex green">
+                <p class="id">Feet</p>
+                <p class="option" id="feet">0</p>
+                    </div>
+                <div class="output flex blue">
+                    <p class="id">Inches</p>
+                    <p class="option" id="inches">0</p>
+                </div>
+                <div class="output flex yellow">
+                <p class="id">Centimeters</p>
+                <p class="option" id="centimeters">0</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/action.js"></script>
+    </body>
+</html>
